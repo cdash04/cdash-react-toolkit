@@ -1,0 +1,58 @@
+{
+  "name": "cdash-react-toolkit",
+  "version": "1.0.0",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
+  "sideEffect": false,
+  "repository": "git@github.com:cdash04/cdash-react-toolkit.git",
+  "author": "Christophe Duchesne-Ashworth <christophe.ashworth@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "files": [
+    "/lib"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-syntax-jsx": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@storybook/addon-actions": "^6.3.12",
+    "@storybook/addon-essentials": "^6.3.12",
+    "@storybook/addon-links": "^6.3.12",
+    "@storybook/react": "^6.3.12",
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "babel-loader": "^8.2.3",
+    "postcss": "^8.3.11",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.58.3",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.1",
+    "rollup-plugin-scss": "3",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "sass": "^1.43.4",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.2",
+    "@types/jest": "^27.0.2",
+    "jest": "^27.3.1",
+    "ts-jest": "^27.0.7"
+  }
+}

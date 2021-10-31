@@ -1,2 +1,2 @@
 # react-nice-tools
-Nice tools home made for React
+Nice homemade tools for React
