@@ -1,9 +1,10 @@
-import { ActionsFunction } from '../reducer/actions-function';
-import { KeysOfArray } from '../types/keys-of-array';
+import { ActionsFunction, KeysOfArray } from "../types";
 
-export function pushToParamArrays<S, A>(param: KeysOfArray<S, A>): ActionsFunction<S, A> {
+export function pushToArrays<S, A>(
+  param: KeysOfArray<S, A>
+): ActionsFunction<S, A> {
   return (state: S, payload: A): S => ({
     ...state,
-    [param]: [...state[param], payload],
-  })
+    [param]: [...((state[param] as unknown) as A[]), payload],
+  });
 }

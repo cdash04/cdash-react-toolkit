@@ -1,3 +1,5 @@
-import { Button } from './stories/Button';
+import actions from "./actions";
+import hoc from "./hoc";
+import reducer from "./reducer";
 
-export { Button };
+export default { ...actions, ...hoc, ...reducer };
