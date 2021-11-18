@@ -105,3 +105,6 @@ dist
 
 # lib
 lib
+
+# storybook build
+storybook-static
