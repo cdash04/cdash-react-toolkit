@@ -1,4 +1,4 @@
-import { ActionsFunction, KeysOfArray } from "../types";
+import { ActionsFunction, KeysOfArray } from '../types';
 
 export function updateParamArrays<S, A>(
   param: KeysOfArray<S, A>,

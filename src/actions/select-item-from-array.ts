@@ -1,4 +1,4 @@
-import { ActionsFunction, KeysOfArray, KeysOfType } from "../types";
+import { ActionsFunction, KeysOfArray, KeysOfType } from '../types';
 
 export function selectItemFromArray<S, A, T>(
   arrayParamKey: KeysOfArray<S, A>,
