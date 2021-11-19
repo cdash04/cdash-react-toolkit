@@ -1,6 +1,6 @@
 {
   "name": "cdash-react-toolkit",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
@@ -24,7 +24,11 @@
     "@storybook/react": "^6.3.12",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
     "babel-loader": "^8.2.3",
+    "eslint": "^8.2.0",
+    "eslint-plugin-react": "^7.27.1",
     "postcss": "^8.3.11",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -46,7 +50,9 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "lint": "yarn eslint src/**/*.ts src/**/*.tsx",
+    "lint:fix": "yarn eslint src/**/*.ts src/**/*.tsx --fix"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",

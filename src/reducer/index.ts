@@ -1,3 +1,3 @@
-import { createReducer, on } from "./create-reducer";
+import { createReducer, on } from './create-reducer';
 
 export default { createReducer, on };

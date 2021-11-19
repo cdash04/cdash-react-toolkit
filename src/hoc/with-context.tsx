@@ -1,4 +1,4 @@
-import React, { Context, FunctionComponent } from 'react'
+import React, { Context, FunctionComponent } from 'react';
 
 type ContextProvider<C> = () => C
 
@@ -11,8 +11,8 @@ export function withContext<C, P>(
       <context.Provider value={contextProvider()}>
         <WrappedComponent {...props} />
       </context.Provider>
-    )
+    );
 
-    return ComponentWithContext
-  }
+    return ComponentWithContext;
+  };
 }

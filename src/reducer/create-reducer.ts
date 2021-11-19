@@ -1,6 +1,7 @@
-import { Action, ActionsFunction, Reducer } from "../types";
-import { ReducersAction } from "./reducers-action";
+import { Action, ActionsFunction, Reducer } from '../types';
+import { ReducersAction } from './reducers-action';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function createReducer<S, A, P = any>(
   ...actions: ReducersAction<S, A, P>[]
 ): Reducer<S, A, P> {
