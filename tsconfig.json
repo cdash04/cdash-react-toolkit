@@ -7,6 +7,7 @@
       "jsx": "react",
       "declaration": true,
       "moduleResolution": "node",
+      "resolveJsonModule": true,
       "noUnusedLocals": true,
       "noUnusedParameters": true,
       "esModuleInterop": true,
@@ -14,9 +15,9 @@
       "noImplicitThis": true,
       "noImplicitAny": true,
       "strictNullChecks": true,
-      "suppressImplicitAnyIndexErrors": true,
       "allowSyntheticDefaultImports": true
     },
     "include": ["src"],
-    "exclude": ["node_modules", "lib"]
+    "exclude": ["node_modules", "lib"],
+    "typeRoot": ["node_modules/@types", "package.json"]
 }

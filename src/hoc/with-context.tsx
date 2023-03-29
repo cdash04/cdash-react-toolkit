@@ -2,7 +2,7 @@ import React, { Context, FunctionComponent } from 'react';
 
 type ContextProvider<C> = () => C
 
-export function withContext<C, P>(
+export function withContext<C, P extends JSX.IntrinsicAttributes>(
   contextProvider: ContextProvider<C>,
   context: Context<C>,
 ): (WrappedComponent: FunctionComponent<P>) => FunctionComponent<P> {

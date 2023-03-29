@@ -6,7 +6,7 @@ import postcss from "rollup-plugin-postcss";
 import scss from 'rollup-plugin-scss';
 import autoprefixer from 'autoprefixer';
 
-const packageJson = require("./package.json");
+import packageJson from "./package.json" assert { type: "json" };
 
 export default {
   input: "src/index.ts",
